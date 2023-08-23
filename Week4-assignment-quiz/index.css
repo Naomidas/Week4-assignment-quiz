@@ -1,0 +1,79 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    /* making it a border-box styled therefore will be easier to style */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Rounded;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* move it to the middle */
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    /* to center the content */
+    align-items: center;
+    background-color: rgb(189, 153, 219);
+
+}
+body.correct {
+    color: aquamarine;
+
+}
+body.wrong {
+color: brown;
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: rgb(204, 195, 226);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px; 
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat (2, auto);
+    gap: 10px;
+    margin: 20 px 0;
+    /* button position */
+}
+.btn { 
+    border: 1px solid hsl(100%, 100%, 30%);
+    background-color: rgb(168, 93, 190);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(30, 7, 49);
+    outline:none;
+    /* button styling */
+}
+.btn:hover { 
+    background-color: rgb(79, 14, 95);
+    /* button hover */
+}
+.btn.correct {
+    color: aquamarine;
+
+}
+.btn.wrong{
+    color: brown;
+
+}
+      
+.start-btn, next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
+
+}
+
